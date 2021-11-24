@@ -9,9 +9,7 @@ $action   = $_GET['action'];
 if($action == "getEmployees")
 {
     $employee_list = $employee->load_all_employee();
-
-    
-
+ 
     $datastorage = [];
     foreach ($employee_list as $employees) {
         $datastorage[] = [
